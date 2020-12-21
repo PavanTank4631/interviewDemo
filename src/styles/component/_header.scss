@@ -1,0 +1,44 @@
+.header{
+  height: 100%;
+  width: 100%;
+}
+
+.header .row{
+  margin: 0px 2vw;
+  margin-top: 2vh;
+}
+
+#col-1{
+  display: flex;
+  align-items: center;
+
+  & #title{
+    margin: 0px;
+    font-size: $l;
+    font-weight: 700;
+    margin-right: $m;
+  }
+}
+
+#col-3{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  & div{
+    justify-content: center;
+
+    & .img-cat{
+      height: $xl - $s;
+      width: $xl - $s;
+      border-radius: $xl;
+      margin: 0px 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-break-point) {
+  #col-3 {
+    display: none;
+  }
+}

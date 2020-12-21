@@ -1,0 +1,16 @@
+.header2 {
+  & .row {
+    margin: 1vw 2vw;
+    margin-top: 2vh;
+    padding: 1vw 0px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+
+    & .header2-col {
+      & p {
+        margin: 0px !important;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
